@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Hide File"
 
-echo "Enter the directory path (Press Enter for current directory):"
+echo "Enter the directory path (Press Enter Key for current directory):"
 read dir
 
 # Use current directory if user did not provide directory path
