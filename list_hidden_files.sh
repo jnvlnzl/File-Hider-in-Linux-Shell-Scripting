@@ -9,7 +9,7 @@ dir=${dir:-.}
 
 # Verify if the directory exists
 if [ -d "$dir" ]; then
-	hidden_files=$(ls -ld "$dir"/.* | grep '^[-]')
+	hidden_files=$(ls -ld "$dir"/.* | grep '^[d-]')
 	if [ -n "$hidden_files" ]; then
 		echo "$hidden_files" | awk '{print $9}' # Print 9th column in ls (filename only)
 	else
