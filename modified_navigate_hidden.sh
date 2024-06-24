@@ -33,6 +33,14 @@ do
 
 	case $choice in
 		Y | y)
+
+			# record HIDE activity
+			mv .hideUnhideHistory hideUnhideHistory
+			date >> hideUnhideHistory
+			echo "$file is hidden." >> hideUnhideHistory
+			echo "" >> hideUnhideHistory
+			mv hideUnhideHistory .hideUnhideHistory
+			
 			mv "$filePath" "$hiddenPath"
 			echo "File succesfully hidden."
 			break
