@@ -1,4 +1,5 @@
 #!/bin/bash
+# modified with additional codes for history
 #ask for directory path, list directory files, loop through the list, select from the list, verify if user wants to hide the selected file
 
 echo "Select File to Hide from the Menu"
