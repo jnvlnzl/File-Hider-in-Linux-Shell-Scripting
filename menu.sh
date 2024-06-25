@@ -32,13 +32,13 @@ while true; do
 
     case $choice in
         1)
-            bash modified_hide_unhide.sh
+            bash hide_unhide.sh
             ;;
         2)
             bash list_hidden_files.sh
             ;;
         3)
-            bash modified_navigate_hidden.sh
+            bash navigate_hidden.sh
             ;;
         4)
             bash history_hide_unhide.sh

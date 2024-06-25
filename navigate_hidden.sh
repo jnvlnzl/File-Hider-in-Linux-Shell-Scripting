@@ -1,4 +1,5 @@
 #!/bin/bash
+# modified with additional codes for history
 #ask for directory path, list directory files, loop through the list, select from the list, verify if user wants to hide the selected file
 
 echo "Select File to Hide from the Menu"
@@ -32,6 +33,14 @@ do
 
 	case $choice in
 		Y | y)
+
+			# record HIDE activity
+			mv .hideUnhideHistory hideUnhideHistory
+			date >> hideUnhideHistory
+			echo "$file is hidden." >> hideUnhideHistory
+			echo "" >> hideUnhideHistory
+			mv hideUnhideHistory .hideUnhideHistory
+			
 			mv "$filePath" "$hiddenPath"
 			echo "File succesfully hidden."
 			break
@@ -47,4 +56,3 @@ do
 	esac
 	
 done
-
