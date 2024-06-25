@@ -6,27 +6,27 @@ while true; do
     echo '
   ___________           ___________
  /___________\         /___________\ 
-|  _________  |       |  _________  |
-| |         | |       | |         | |
-| |         | |       | |         | |
-| |         | |  -->  | |         | |
-| |_________| |       | |_________| |
-|             |       |             |
+|  ---------  |       | ----------- |
+| |         | |       | |\  / \  /| |
+| |         | |       | | \/   \/ | |
+| |         | |  -->  | | /\  / \ | |
+| |         | |       | |/  \/   \| |
+|  ---------  |       | ----------- |
 |_____________|       ._____________. 
-    FOLDER                .FOLDER    
+     FILE                 .FILE    
     '   
 
-    echo "======== File Hide/Unhide Menu ========"
-    echo "| 1. Hide or Unhide a file            |"
-    echo "|-------------------------------------|"        
-    echo "| 2. List Hidden Files                |"
-    echo "|-------------------------------------|"
-    echo "| 3. Navigate and Hide Files          |"
-    echo "|-------------------------------------|"
-    echo "| 4. View Hide/Unhide History         |"
-    echo "|-------------------------------------|"
-    echo "| 5. Exit                             |"
-    echo "======================================="
+    echo "======= File Hide/Unhide Menu ======="
+    echo "| 1. Hide or Unhide a File          |"
+    echo "|-----------------------------------|"        
+    echo "| 2. List Hidden Files              |"
+    echo "|-----------------------------------|"
+    echo "| 3. Navigate and Hide Files        |"
+    echo "|-----------------------------------|"
+    echo "| 4. View Hide/Unhide History       |"
+    echo "|-----------------------------------|"
+    echo "| 5. Exit                           |"
+    echo "====================================="
     echo -n "Enter your choice (1-5): "
     read choice
 
@@ -44,15 +44,15 @@ while true; do
             bash history_hide_unhide.sh
             ;;
         5)
-            echo "Exiting the program. Goodbye!"
+            echo "Exiting the program. Thank You!"
             exit 0
             ;;
         *)
-            echo "Invalid choice. Please enter a number between 1 and 5."
+            echo "Invalid choice. Select a number from 1 to 5."
             ;;
     esac
 
     echo
-    echo "Operation completed."
+    echo "Function executed."
     read -p "Press Enter to return to the main menu..."
 done
